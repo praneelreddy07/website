@@ -1,0 +1,40 @@
+header{
+    margin: auto;
+    text-align: center;
+
+    background-color: aqua;
+    color: black;
+    padding: 20px;
+    border: 200px;
+}
+h6{
+    opacity: 0.5;
+    margin: auto;
+    text-align: left;
+    width: 400px;
+}
+h1{
+    margin: auto;
+    text-align: left;
+    width: 400px;
+}
+h4{
+    margin: auto;
+    text-align: left;
+    width: 400px;
+}
+.fa-facebook {
+    background: black;
+    color: white;
+    width: 20px;
+    font-size: 10px;
+    padding: 5px;
+
+}
+.fa-linkedin {
+    background: black;
+    color: white;
+    width: 20px;
+    font-size: 10px;
+    padding: 5px;
+}
