@@ -20,13 +20,42 @@
         <input type="text" id="Salary"><br><br>
         <label>Experience</label> &nbsp; 
         <input type="text" id="Experience"><br><br>
-        <button>Submit</button> &nbsp; &nbsp;
+        <button type="button" onclick="submitted()">Submit</button> &nbsp; &nbsp;
         <button>Clear</button>
-    </form>
+    </form><br><br>
    </div>
-   <div id="tables">
+       <table class="container">
+           <thead>
+               <th>Id</th>
+               <th>Name</th>
+               <th>Job</th>
+               <th>Salary</th>
+               <th>Experience</th>
+           </thead>
+        </table>
+        <script>
+            //Read the values from form dynamically
+            function submitted(){
+                let id = document.getElementById('Id');
+                document.write(id)
+                //console.log(id)
+                let name = document.getElementById('Name');
+                document.write(name)
+                //console.log(name)
+                let job = document.getElementById('Job');
+                document.write(job)
+                //console.log(job)
+                let salary = document.getElementById('Salary');
+                document.write(salary)
+                //console.log(salary)
+                let Experience = document.getElementById('Experience');
+                document.write(Experience)
+                //console.log(Experience)
 
-
-   </div>
+                
+            }
+            //When clicked on Submit button the values should
+            //be injected into table downside
+        </script>
 </body>
 </html>
