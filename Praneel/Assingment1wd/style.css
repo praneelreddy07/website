@@ -1,5 +1,18 @@
 form{
     margin: auto;
     text-align: center;
-    display: block;
+    background-color: aliceblue;
+    padding: 20px;
+}
+table.container{
+    width: 400px;
+    
+}
+table{
+    margin: auto;
+    text-align: center;
+    border: 2px solid black;
+    padding: 8px;
+    border-collapse: collapse;
+    
 }
