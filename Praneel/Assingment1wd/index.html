@@ -20,11 +20,10 @@
         <input type="text" id="Salary"><br><br>
         <label>Experience</label> &nbsp; 
         <input type="text" id="Experience"><br><br>
-        <button type="button" onclick="submitted()">Submit</button> &nbsp; &nbsp;
-        <button>Clear</button>
+        <button type="button" onclick="submitted()">Submit</button>
     </form><br><br>
    </div>
-       <table class="container">
+       <table id="container">
            <thead>
                <th>Id</th>
                <th>Name</th>
@@ -36,22 +35,19 @@
         <script>
             //Read the values from form dynamically
             function submitted(){
-                let id = document.getElementById('Id');
-                document.write(id)
-                //console.log(id)
-                let name = document.getElementById('Name');
-                document.write(name)
-                //console.log(name)
-                let job = document.getElementById('Job');
-                document.write(job)
-                //console.log(job)
-                let salary = document.getElementById('Salary');
-                document.write(salary)
-                //console.log(salary)
-                let Experience = document.getElementById('Experience');
-                document.write(Experience)
-                //console.log(Experience)
+                let id = document.getElementById('Id').value;
+                let name = document.getElementById('Name').value;
+                let job = document.getElementById('Job').value;
+                let salary = document.getElementById('Salary').value;
+                let Experience = document.getElementById('Experience').value;
 
+                document.getElementById('container').innerHTML += "<tr>"
+                    + "<td>" + id + "</td>"
+                    + "<td>" + name + "</td>"
+                    + "<td>" + job + "</td>"
+                    + "<td>" + salary + "</td>"
+                    + "<td>" + Experience + "</td>"
+                    +"</tr>"
                 
             }
             //When clicked on Submit button the values should
